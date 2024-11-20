@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+  </head>
+  <body>
+    <a href="index.html">🏠</a>
+    <a href="estilos.html">➡</a>
+    <h1>Formularios</h1>
+    <h2>Formulario con GET </h2>
+    <form action="Formularios.html" method="GET" >
+        <fieldset >
+            <legend>Datos Personales</legend>
+      
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre"required/><br />
+        <label for="apeido_pat">Apellido Paterno:</label>
+        <input type="text" id="apeido_pat" name="apeido_pat" placeholder="Apellido Paterno" required/><br />
+        <label for="apeido_mat">Apellido Materno:</label>
+        <input type="text" id="apeido_mat" name="apeido_mat" placeholder="Apellido Materno" required/><br />
+        <label for="clave">Contraseña:</label>
+        <input type="password" id="clave" name="clave"/><br />
+        <label for="archivo">Archivo:</label>
+        <input type="file" id="archivo" name="archivo"/><br />
+        <label for="acepto">Checkbox:</label>
+        <input type="checkbox" id="acepto" name="acepto"/><br />
+        <br/>
+            <div>
+            <label for="masculino">
+            <input type="radio" id="masculino" name="genero" value="M" checked/>
+            Masculino</label>
+            </div>
+            <div>
+            <label for="femenino">
+            <input type="radio" name="genero" id="femenino" value="F"/>
+            Femenino</label>
+            </div>
+            <div>
+            <label for="nose">
+            <input type="radio" name="genero" id="nose" value="F"/>
+            Nose</label>
+            </div>
+        <br/>
+        <input type="hidden" name="folio" value="UFEJ838"  />
+
+        <label for="correo">Correo Electronico:</label>
+        <input type="email" id="correo" name="correo"/><br />
+        <label for="enlace">Enlace</label>
+        <input type="url" id="enlace" name="Enlace"/><br />
+        <label for="col">Color:</label>
+        <input type="color" id="col" name="colores" /><br />
+        <input type="date" name="fechas"/><br />
+        <input type="number" name="numero" min="0" max="100"/><br />
+        <input type="range" name="rango" min="10" max="100"/><br />
+        <input type="month" name="mes"/><br />
+        <input type="week" name="semana"/><br />
+        <input type="search" name="q"/><br />
+        <input type="tel" name="telefono"/>
+        <input type="datetime-local" name="hora"/>
+        <textarea name="comentario" rows="2" cols="20">Escribe tu comentario...</textarea>
+        <br />
+        <label for="paises">Paises</label>
+        <select name="pais" id="paises" aria-readonly="true">
+            <optgroup label="Paises de Norteamerica">
+                <option value="" selected>Elige un pais</option>
+                <option value="MX">Mexico </option>
+                <option value="US" >Estados Unidos</option>
+                <option value="CA">Canada</option>
+            </optgroup>
+                <optgroup label="Paises de Europa">
+                <option value="BZ">Francia</option>
+                <option value="IR">Irlanda</option>
+                <option value="RS">Rusia</option>
+            </optgroup>
+        </select>
+        <br />
+        <div>
+            <center>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar</button>
+        <button type="button">Cancelar</button>
+        </center>
+        </div>
+        <input list ="colores" name="color" />
+        <datalist id="colores">
+            <option value="Rojo" />
+            <option value="Azul" />
+            <option value="Verde" />
+        </datalist> <br/>
+        <output name="resultado" for="numero">0</output> <br/>
+        <progress value="80" max="100">75%</progress>
+        <meter value="0.5" min="0" max="1">50%</meter>
+        <details>
+        <summary>Detalles</summary>
+        <p>Contenido de los detalles...</p>
+        </details>
+      </fieldset>
+    </form>
+    <hr />
+    <h2>Formulario con POST</h2>
+    <form action="procesa.php" method="POST">
+      <input
+        type="text"
+        name="nombre"
+        id="nombre"
+        placeholder="Nombre(s)"
+        required
+      />
+      <input
+        type="text"
+        name="apellido_paterno"
+        id="apellido_paterno"
+        placeholder="Apellido paterno"
+        required
+      />
+      <input
+        type="text"
+        name="apellido_materno"
+        id="apellido_materno"
+        placeholder="Apellido materno"
+        required
+      />
+      <input type="hidden" name="folio" value="Nrn2cr234ui" />
+      <div>
+        <label for="colores"> Colores </label>
+        <select name="colores" id="colores">
+          <optgroup label="Colores primarios">
+            <option value="rojo">Rojo</option>
+            <option value="azul" selected>Azul</option>
+            <option value="amarillo">Amarillo</option>
+          </optgroup>
+          <optgroup label="Colores secundarios">
+            <option value="verde">Verde</option>
+            <option value="naranja">Naranja</option>
+            <option value="violeta">Violeta</option>
+          </optgroup>
+        </select>
+      </div>
+      <meter value="0.4" min="0" max="1">50%</meter>
+      <progress value="50" max="100">75%</progress>
+      <div>
+        <button type="submit">Guardar</button>
+        <button type="reset">Limpiar</button>
+        <button type="button">Inútil</button>
+      </div>
+    </form>
+  </body>
+</html>

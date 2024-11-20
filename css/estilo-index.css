@@ -1,0 +1,21 @@
+.titulos {
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #aaa;
+  }
+
+.contenedor {
+    text-align: center;
+}
+
+.lista-centrada {
+    text-align: center;
+    list-style-position: inside;
+}
+.links {
+    font-family: 'Crimson Pro', serif;
+    font-size: 25px;
+    text-shadow: 4px 4px 4px #00aeff;
+  }
+
+  

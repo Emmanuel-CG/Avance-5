@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Búsqueda de Países</title>
+  <link rel="stylesheet" href="css/countries.css">
+</head>
+<body>
+    <a href="index.html">🏠</a>
+    <a href="Eventos.html">➡</a>  
+  <h1>Búsqueda de Países</h1>
+  <form id="search-form">
+    <input type="text" id="country-name-input" placeholder="Nombre del país" required>
+    <button type="submit">Buscar</button>
+  </form>
+  <p id="error-message" class="error"></p>
+  <div id="country-info" class="info">
+    <h2 id="country-name"></h2>
+    <img id="country-flag" src="" alt="Bandera" style="width: 150px;">
+    <p><strong>Capital:</strong> <span id="country-capital"></span></p>
+    <p><strong>Región:</strong> <span id="country-region"></span></p>
+    <p><strong>Población:</strong> <span id="country-population"></span></p>
+    <p><strong>Idiomas:</strong> <span id="country-languages"></span></p>
+  </div>
+  <script src="JavaScript/countries.js"></script>
+</body>
+</html>
